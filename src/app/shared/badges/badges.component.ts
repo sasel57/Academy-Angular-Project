@@ -37,6 +37,5 @@ export class BadgesComponent implements OnInit {
           return 'badge badge-light';
     }
   }
-  
 
 }

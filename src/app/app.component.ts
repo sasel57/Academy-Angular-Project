@@ -3,12 +3,16 @@ import { Component, ViewChild } from '@angular/core';
 import { ModalComponent } from './shared/modal/modal.component';
 import { ToastrService } from './core/services/toastr.service';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  constructor(private spinnerOverlayService: SpinnerOverlayService, private toastrService: ToastrService){
+
+  }
   title = 'task-manager';
   items = [
     { id: 1, name: 'Item number 3', description: 'Item description 3' },
@@ -16,9 +20,7 @@ export class AppComponent {
   ];
   @ViewChild(ModalComponent) modal: ModalComponent;
   selectedId = 2;
-  constructor(private spinnerOverlayService: SpinnerOverlayService, private toastrService: ToastrService){
 
-  }
 
   showSpinner(): void{
     this.spinnerOverlayService.show();

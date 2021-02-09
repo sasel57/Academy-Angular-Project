@@ -7,7 +7,7 @@ import { HighlightDirective } from './highlight/highlight.directive';
 import { ListComponent } from './list/list.component';
 import { SpinnerOverlayComponent } from './spinner-overlay/spinner-overlay.component';
 import { ToastrComponent } from './toastr/toastr.component';
-import { CartComponent } from './cart/cart.component';
+import { CardComponent } from './card/card.component';
 import { BadgesComponent } from './badges/badges.component';
 
 @NgModule({
@@ -20,7 +20,7 @@ import { BadgesComponent } from './badges/badges.component';
     ListComponent,
     SpinnerOverlayComponent,
     ToastrComponent,
-    CartComponent,
+    CardComponent,
     BadgesComponent
   ],
   exports: [
@@ -30,7 +30,7 @@ import { BadgesComponent } from './badges/badges.component';
     ListComponent,
     SpinnerOverlayComponent,
     ToastrComponent,
-    CartComponent,
+    CardComponent,
     BadgesComponent
   ],
 })

@@ -1,11 +1,10 @@
 <div class="card m-4" style="width: 18rem;">
   <div class="card-header">
-    {{ header }}
+    <ng-content select="[card-header]"></ng-content>
   </div>
   <div class="card-body">
-    <h5 class="card-title">{{ title }}</h5>
-
-    <p class="card-text">{{ desc }}</p>
+    <ng-content select="[card-body]"></ng-content>
+    
    
   </div>
 </div>
